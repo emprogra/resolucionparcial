@@ -10,8 +10,17 @@ namespace Recuperacion_Emily.Controllers
     
     public class SumaController : ApiController
     {
+        
         [HttpGet]
+        [HttpPost]
         public int suma(int a, int b)
+        {
+            return a + b;
+
+        }
+        [HttpPost]
+        [Route("{a}/{b}")]
+        public int suma2(int a, int b)
         {
             return a + b;
 
