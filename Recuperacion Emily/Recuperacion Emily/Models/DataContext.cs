@@ -12,5 +12,7 @@ namespace Recuperacion_Emily.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<Recuperacion_Emily.Models.Product> Products { get; set; }
     }
 }
